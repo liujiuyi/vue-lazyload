@@ -144,6 +144,7 @@ export default class ReactiveListener {
       return
     }
 
+    console.log('this.src', this.src)
     if (this.state.loaded || imageCache[this.src]) {
       this.state.loaded = true
       onFinish()
