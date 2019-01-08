@@ -46,6 +46,10 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: DEBUG ? ['Chrome'] : ['ChromeHeadless'],
     singleRun: !DEBUG,
-    concurrency: Infinity
+    concurrency: Infinity,
+    browserConsoleLogOptions: {
+      terminal: true,
+      level: "INFO"
+    }
   })
 }
